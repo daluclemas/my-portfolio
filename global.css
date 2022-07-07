@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Montserrat',
+sans-serif;
+font-family: 'Montserrat Alternates',
+sans-serif;
+font-family: 'Rubik Wet Paint',
+cursive;
+font-family: 'Special Elite',
+cursive; */
+
+body{
+  color:rgb(75,0,130);
+  background: black;
+}
