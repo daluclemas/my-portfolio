@@ -14,7 +14,7 @@ font-family: 'Special Elite',
 cursive; */
 
 :root {
-  --purple-color: rgba(75, 0, 130);
+  --purple-color: rgba(75, 0, 130,0.9); 
   --light-purple: rgba(75, 0, 130, 0.5);
   --black-color: black;
 }
@@ -189,19 +189,46 @@ nav {
   border: 2px hidden green;
 }
 
-.img{
-  border: 10px dotted var(--purple-color);
+.border{
   width: 200px;
   height: 200px;
+  margin: 0px auto 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.border::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px dotted;
+  border-color: rgba(75, 0, 130, 0.8);
+  animation: spin 5s alternate-reverse infinite;
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(180deg);
+  }
+}
+
+.img{
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0px auto 20px;
 }
+
 
 .img img{
   width: 100%;
   height: 100%;
+  
 }
+
 
 .text-container{
   width: 100%;
@@ -319,9 +346,14 @@ nav {
     margin-left: auto;
   }
 
-  .img{
+  .border{
     width: 350px;
     height: 350px;
+    margin: 0px auto 40px;
+  }
+
+  .border::before{
+    border: 15px dotted var(--purple-color);
   }
 
   .header-content{
@@ -425,10 +457,14 @@ nav {
     
   }
 
-  .img{
+  .border{
     width: 90%;
     height: 90%;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0px auto 0px;
+  }
+
+  .border::before{
+
+    border: 20px dotted var(--purple-color);
   }
 }
