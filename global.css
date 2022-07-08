@@ -26,19 +26,19 @@ body {
 
 .container {
   width: 100%;
-  border: 2px solid red;
+  border: 2px hidden red;
   overflow: hidden;
 }
 
 .content {
   width: 90%;
   margin: 0 auto;
-  border: 2px solid green;
+  border: 2px hidden green;
 }
 
 header {
   width: 100%;
-  border: 2px solid blue;
+  border: 2px hidden blue;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
