@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
-/* font-family: 'Montserrat',
+/*font-family: 'Montserrat',
 sans-serif;
 font-family: 'Montserrat Alternates',
 sans-serif;
+font-family: 'Roboto Slab',
+serif;
 font-family: 'Rubik Wet Paint',
 cursive;
 font-family: 'Special Elite',
@@ -66,7 +68,8 @@ header {
 }
 
 .my-english-name {
-  font-family: "Special Elite", cursive;
+  font-family: 'Roboto Slab',serif;
+  letter-spacing: 2px;
   text-transform: capitalize;
   font-size: 30px;
   color: var(--purple-color);
@@ -251,7 +254,8 @@ nav {
   width: 100%;
   text-transform: capitalize;
   font-size: 30px;
-  font-family: 'Special Elite',cursive;
+  font-family: 'Roboto Slab',serif;
+  letter-spacing: 2px;
   color: var(--purple-color);
   font-weight: 600;
   line-height: 1.5;
