@@ -22,7 +22,7 @@ cursive; */
   --font-color: rgb(5, 2, 5);
   --nav-mobile-color:rgb(246, 238, 255);
   --button: rgba(75, 0, 130, 0.9);
-  --silver-ish: #e4e7e8;
+  /* --silver-ish: #e4e7e8; */
   --silver-grey:#bbc3c9;
 }
 
@@ -30,6 +30,7 @@ cursive; */
   --black-color: rgb(5, 2, 5);
   --font-color: rgb(234, 221, 248);
   --button: rgb(234, 221, 248);
+  --silver-grey: rgb(234, 221, 248);
 }
 
 body {
@@ -37,6 +38,8 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: var(--black-color);
   transition: 0.5s ease-in;
+  color: var(--font-color);
+  font-weight: 400;
 }
 
 .container {
@@ -362,6 +365,85 @@ nav {
   color: var(--button);
 }
 
+.about-me-and-experience{
+  border-left: 2px solid var(--silver-grey);
+  padding: 0 0 20px 30px;
+  margin:30px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.about-me{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.about-me h3{
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.about-me p{
+  line-height: 1.5;
+}
+
+.about-me p::first-letter{
+  text-transform: uppercase;
+}
+
+.experience{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience h3{
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+.experience-and-roles{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.experience-and-roles h5{
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.experience-and-roles h5::before {
+  content: '';
+  background-color: var(--font-color);
+  width: 5px;
+  height: 5px;
+}
+
+.experience-and-roles h5 span{
+  font-style: italic;
+  font-weight: 400;
+}
+
+.job-title{
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.job-title li{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
 
 @media(max-width:991px){
 
@@ -572,5 +654,20 @@ nav {
 
   .toggle{
     transform: translateX(49px);
+  }
+
+  .about-me-and-experience{
+    margin:60px 0 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:10px ;
+  }
+
+  .about-me{
+    padding-right: 20px;
+  }
+
+  .experience {
+
+    padding-left: 20px;
   }
 }
