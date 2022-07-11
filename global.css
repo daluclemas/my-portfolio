@@ -651,6 +651,7 @@ nav {
 
   .about-me-and-experience{
     margin:100px 0 30px;
+    padding-top:0;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap:10px ;
   }
