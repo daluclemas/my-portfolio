@@ -418,13 +418,6 @@ nav {
   font-size: 16px;
 }
 
-.experience-and-roles h5::before {
-  content: '';
-  background-color: var(--font-color);
-  width: 5px;
-  height: 5px;
-}
-
 .experience-and-roles h5 span{
   font-style: italic;
   font-weight: 400;
@@ -663,7 +656,7 @@ nav {
   }
 
   .about-me{
-    padding-right: 20px;
+    padding-right: 40px;
   }
 
   .experience {
