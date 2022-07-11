@@ -650,7 +650,7 @@ nav {
   }
 
   .about-me-and-experience{
-    margin:80px 0 30px;
+    margin:100px 0 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap:10px ;
   }
