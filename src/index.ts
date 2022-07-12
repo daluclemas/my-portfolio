@@ -1,3 +1,4 @@
+
 const nav = document.querySelector('nav') as HTMLElement;
 
 const menuIcon = document.querySelector('.menu-icon') as HTMLDivElement;
@@ -11,6 +12,8 @@ const barThree = document.querySelector('.icon-three') as HTMLDivElement;
 const closeIcon = document.querySelector('.times') as HTMLDivElement;
 
 const toggleBtn = document.querySelector('.theme-toggle') as HTMLDivElement;
+
+const toggleIcon = document.querySelector('.fa-solid') as HTMLElement;
 
 
 menuIcon.addEventListener('click', (e: Event) => {
@@ -33,10 +36,14 @@ closeIcon.addEventListener('click', () => {
 });
 
 toggleBtn.addEventListener('click', (e: Event | any) => {
-  if (e.target.classList.contains('toggle-btn')) {
-    e.target.classList.toggle('toggle');
-    toggleBtn.classList.toggle('active-toggle')
-    document.documentElement.classList.toggle('dark-mode')
-  }
+  // if (e.target.classList.contains('fa-moon')) {
+  //   e.target.classList.toggle('fa-sun');
+  //   toggleBtn.classList.toggle('active-toggle')
+  //   document.documentElement.classList.toggle('dark-mode')
+  // }
+
+  toggleIcon.classList.toggle('fa-sun')
+  toggleBtn.classList.toggle('active-toggle')
+  document.documentElement.classList.toggle('dark-mode')
 })
 

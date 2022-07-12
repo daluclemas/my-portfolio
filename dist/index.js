@@ -6,6 +6,7 @@ const barTwo = document.querySelector('.icon-two');
 const barThree = document.querySelector('.icon-three');
 const closeIcon = document.querySelector('.times');
 const toggleBtn = document.querySelector('.theme-toggle');
+const toggleIcon = document.querySelector('.fa-solid');
 menuIcon.addEventListener('click', (e) => {
     nav.classList.add('active-nav');
     barTwo.classList.add('active');
@@ -23,9 +24,12 @@ closeIcon.addEventListener('click', () => {
     // }, 1000)
 });
 toggleBtn.addEventListener('click', (e) => {
-    if (e.target.classList.contains('toggle-btn')) {
-        e.target.classList.toggle('toggle');
-        toggleBtn.classList.toggle('active-toggle');
-        document.documentElement.classList.toggle('dark-mode');
-    }
+    // if (e.target.classList.contains('fa-moon')) {
+    //   e.target.classList.toggle('fa-sun');
+    //   toggleBtn.classList.toggle('active-toggle')
+    //   document.documentElement.classList.toggle('dark-mode')
+    // }
+    toggleIcon.classList.toggle('fa-sun');
+    toggleBtn.classList.toggle('active-toggle');
+    document.documentElement.classList.toggle('dark-mode');
 });

@@ -189,34 +189,27 @@ nav {
 }
 
 .theme-toggle {
-  width: 100px;
+  width: 35px;
   height: 30px;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  position: relative;
-  border: 3px solid rgba(75, 0, 130, 0.9); 
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid rgba(234, 221, 248 ,0.9); 
+}
+
+.fa-solid{
+  font-size: 16px;
+  transition: 0.5s ease-in;
+}
+
+.fa-solid:hover{
+  color: var(--purple-color);
 }
 
 .active-toggle.theme-toggle{
   border: 3px solid rgb(234, 221, 248);
-}
-
-.toggle-btn {
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  position: absolute;
-  transform: translateX(0);
-  transition: 0.5s ease-in;
-  background-color: rgb(5, 2, 5);
-  box-shadow: 2px 2px 4px 0 grey inset;
-}
-
-.toggle{
-  transform: translateX(68px);
-  box-shadow: 2px 2px 4px 0 grey inset;
-  background-color:rgb(234, 221, 248); ;
 }
 
 .header-content {
@@ -635,19 +628,12 @@ nav {
   }
 
   .theme-toggle{
-    width: 80px;
-    height: 25px;
+    width: 35px;
+    height: 30px;
+    border: 3px solid rgba(75, 0, 130, 0.9);
+      
   }
   
-  .toggle-btn {
-    height: 23px;
-    width: 23px;
-    transform: translateX(0px);
-  }
-
-  .toggle{
-    transform: translateX(49px);
-  }
 
   .about-me-and-experience{
     margin:100px 0 30px;
