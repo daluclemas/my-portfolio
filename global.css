@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+
 /*font-family: 'Montserrat',
 sans-serif;
 font-family: 'Montserrat Alternates',
@@ -44,6 +45,7 @@ body {
   transition: 0.5s ease-in;
   color: var(--font-color);
   font-weight: 400;
+ 
 }
 
 .container {
