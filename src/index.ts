@@ -57,9 +57,10 @@ window.addEventListener('scroll', (e: Event | null) => {
   const hireme = document.querySelector('.hire-me') as HTMLDivElement;
 
   if (scrolled > 260) {
-    hireme.style.display = 'flex';
+    hireme.style.transform = 'translateX(0)';
+    hireme.style.transition = '0.5s linear'
   } else {
-    hireme.style.display = 'none';
+    hireme.style.transform = 'translateX(500px)';
   }
 })
 

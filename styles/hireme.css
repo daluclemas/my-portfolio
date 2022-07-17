@@ -5,7 +5,7 @@
   bottom: 20px;
   right:10px;
   background-color: var(--purple-color);
-  transition: 0.5s linear;
+  transition: all 0.5s linear;
   display: flex;
   justify-content: center;
   align-items: center;

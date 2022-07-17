@@ -39,9 +39,10 @@ window.addEventListener('scroll', (e) => {
     const scrolled = document.documentElement.scrollTop;
     const hireme = document.querySelector('.hire-me');
     if (scrolled > 260) {
-        hireme.style.display = 'flex';
+        hireme.style.transform = 'translateX(0)';
+        hireme.style.transition = '0.5s linear';
     }
     else {
-        hireme.style.display = 'none';
+        hireme.style.transform = 'translateX(500px)';
     }
 });
