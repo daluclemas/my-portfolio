@@ -1,0 +1,132 @@
+.projects-container{
+  width: 100%;
+  border: 2px hidden green;
+  margin: 70px 0 20px;
+}
+
+.projects-container h3 {
+  width: 90%;
+  margin: auto;
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+  .projects-container h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+.projects{
+  width: 100%;
+  display:grid;
+  padding: 20px;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.card{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s linear;
+  
+}
+
+
+
+.card-image-section, .card-text-section{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.8s linear;
+}
+.card-image-section{
+  transform: translateY(100px);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height:  */
+
+}
+
+.mobile{
+  background-image: url('../assets/space-tourism-image.png');
+}
+
+.tablet-image{
+  background-image: url('../assets/portfolio-image.png');
+}
+
+.large-image {
+  background-image: url('../assets/valores-image.png');
+}
+
+
+.x-large-image {
+  background-image: url('../assets/property-mataaz.png');
+}
+
+
+.card-text-section{
+  border: 2px solid purple;
+  transform: translateY(-100px);
+  background-color: rgb(255, 255, 255);
+ 
+}
+
+.card:hover .card-text-section{
+  transform: translateY(0);
+}
+
+.card:hover .card-image-section {
+  transform: translateY(0);
+}
+
+.tablet,
+.large,
+.x-large {
+  display: none;
+}
+
+@media(min-width: 768px) {
+
+  .projects-container{
+    margin: 100px 0 30px;
+  }
+  .projects{
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 30px;
+  }
+
+  .tablet{
+    display: flex;
+  }
+
+  .card{
+  height: 400px;
+  
+}
+
+}
+
+@media(min-width: 992px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .large{
+    display: flex;
+  }
+}
+
+@media(min-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .x-large{
+    display: flex;
+  }
+}
