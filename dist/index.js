@@ -7,6 +7,8 @@ const barThree = document.querySelector('.icon-three');
 const closeIcon = document.querySelector('.times');
 const toggleBtn = document.querySelector('.theme-toggle');
 const toggleIcon = document.querySelector('.fa-solid');
+const footertext = document.querySelector('.footer-text .date');
+footertext.innerHTML = new Date().getFullYear().toString();
 menuIcon.addEventListener('click', (e) => {
     nav.classList.add('active-nav');
     barTwo.classList.add('active');
@@ -32,4 +34,14 @@ toggleBtn.addEventListener('click', (e) => {
     toggleIcon.classList.toggle('fa-sun');
     toggleBtn.classList.toggle('active-toggle');
     document.documentElement.classList.toggle('dark-mode');
+});
+window.addEventListener('scroll', (e) => {
+    const scrolled = document.documentElement.scrollTop;
+    const hireme = document.querySelector('.hire-me');
+    if (scrolled > 260) {
+        hireme.style.display = 'flex';
+    }
+    else {
+        hireme.style.display = 'none';
+    }
 });

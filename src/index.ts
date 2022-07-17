@@ -15,6 +15,10 @@ const toggleBtn = document.querySelector('.theme-toggle') as HTMLDivElement;
 
 const toggleIcon = document.querySelector('.fa-solid') as HTMLElement;
 
+const footertext = document.querySelector('.footer-text .date') as HTMLParagraphElement;
+
+footertext.innerHTML = new Date().getFullYear().toString();
+
 
 menuIcon.addEventListener('click', (e: Event) => {
   nav.classList.add('active-nav');
@@ -45,5 +49,17 @@ toggleBtn.addEventListener('click', (e: Event | any) => {
   toggleIcon.classList.toggle('fa-sun')
   toggleBtn.classList.toggle('active-toggle')
   document.documentElement.classList.toggle('dark-mode')
+});
+
+
+window.addEventListener('scroll', (e: Event | null) => {
+  const scrolled = document.documentElement.scrollTop;
+  const hireme = document.querySelector('.hire-me') as HTMLDivElement;
+
+  if (scrolled > 260) {
+    hireme.style.display = 'flex';
+  } else {
+    hireme.style.display = 'none';
+  }
 })
 

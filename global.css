@@ -1,6 +1,7 @@
 @import url('./styles/project-card.css');
 @import url('./styles/skills.css');
 @import url('./styles/footer.css');
+@import url('./styles/hireme.css');
 
 * {
   margin: 0;
@@ -45,7 +46,7 @@ body {
   transition: 0.5s ease-in;
   color: var(--font-color);
   font-weight: 400;
- 
+  position: relative;
 }
 
 .container {
