@@ -2,6 +2,7 @@
 @import url('./styles/skills.css');
 @import url('./styles/footer.css');
 @import url('./styles/hireme.css');
+@import url('./styles/modal.css');
 
 * {
   margin: 0;

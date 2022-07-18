@@ -1,0 +1,109 @@
+.modal{
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top:0;
+  z-index: 3;
+}
+
+.hire-me-modal{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px) hue-rotate(10deg);
+}
+
+.modal-content{
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 25px;
+  color: rgb(5, 2, 5);
+}
+
+.modal-header{
+  width: 100%;
+}
+
+.modal-header-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button{
+  width:40px;
+  height: 40px;
+  margin-left: auto;
+}
+
+.close-button button{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-button button i{
+  font-size: 24px;
+}
+
+.modal-header-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.modal-header-text h3{
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.modal-header-text p{
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.modal-header-text h3::first-letter, .modal-header-text p::first-letter{
+  text-transform: uppercase;
+}
+
+.modal-body{
+  margin-top: 10px;
+  border: 2px solid blue;
+}
+
+@media(min-width: 600px) {
+  .modal-content{
+    width: 80%;
+    padding: 50px;
+  }
+
+  .modal-header-text p{
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 992px){
+  .hire-me-modal{
+   
+  }
+
+  .modal-content{
+    width: 50%;
+    padding: 70px;
+  }
+
+  .modal-header-text h3{
+    font-size: 24px;
+  }
+}
