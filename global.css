@@ -22,6 +22,15 @@ cursive;
 font-family: 'Special Elite',
 cursive; */
 
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(75, 0, 130, 0.9);
+  border-radius: 20px;
+}
+
 :root {
   --purple-color: rgba(75, 0, 130,0.9); 
   --light-purple: rgba(75, 0, 130, 0.7);
