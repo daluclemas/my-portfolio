@@ -21,6 +21,7 @@
   margin: auto;
   padding: 25px;
   color: rgb(5, 2, 5);
+  overflow: scroll;
 }
 
 .modal-header{
