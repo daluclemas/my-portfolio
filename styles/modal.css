@@ -185,7 +185,7 @@ textarea{
 @media(min-width: 600px) {
   .modal-content{
     width: 70%;
-    padding: 50px;
+    padding: 30px;
   }
 
   .modal-header-text p{
@@ -204,7 +204,7 @@ textarea{
 
   .modal-content{
     width: 50%;
-    padding: 70px;
+    padding:35px;
   }
 
   .modal-header-text h3{
