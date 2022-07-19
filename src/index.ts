@@ -27,6 +27,8 @@ const showmodal = document.querySelector('.show-modal') as HTMLElement;
 
 const showmodal2 = document.querySelector('.hire-me') as HTMLElement;
 
+const hirememodal = document.querySelector('.modal-content') as HTMLElement;
+
 
 menuIcon.addEventListener('click', (e: Event) => {
   nav.classList.add('active-nav');
@@ -70,10 +72,13 @@ showmodal2.addEventListener('click', (e:Event | null) => {
 
 })
 
-modal.addEventListener('click', (e: Event | null) => {
-  modal.style.display = "none";
+modal.addEventListener('click', (e:Event|any) => {
+  if (e.target.classList.contains('hire-me-modal')){
   
-})
+    modal.style.display = "none";
+
+  }
+});
 
 
 window.addEventListener('scroll', (e: Event | null) => {

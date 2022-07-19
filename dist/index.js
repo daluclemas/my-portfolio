@@ -13,6 +13,7 @@ const footertext = document.querySelector('.footer-text .date');
 footertext.innerHTML = new Date().getFullYear().toString();
 const showmodal = document.querySelector('.show-modal');
 const showmodal2 = document.querySelector('.hire-me');
+const hirememodal = document.querySelector('.modal-content');
 menuIcon.addEventListener('click', (e) => {
     nav.classList.add('active-nav');
     barTwo.classList.add('active');
@@ -45,7 +46,9 @@ showmodal2.addEventListener('click', (e) => {
     barThree.classList.remove('active');
 });
 modal.addEventListener('click', (e) => {
-    modal.style.display = "none";
+    if (e.target.classList.contains('hire-me-modal')) {
+        modal.style.display = "none";
+    }
 });
 window.addEventListener('scroll', (e) => {
     const scrolled = document.documentElement.scrollTop;
