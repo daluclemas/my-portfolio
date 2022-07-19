@@ -50,6 +50,10 @@ body {
   position: relative;
 }
 
+a{
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   border: 2px hidden red;
@@ -146,8 +150,6 @@ nav {
 .active-nav{
   transform: translateX(0);
 }
-
-
 
 .nav-items {
   width: 100%;
@@ -371,7 +373,7 @@ nav {
 .about-me-and-experience{
   border-left: 2px solid var(--silver-grey);
   padding: 0 0 20px 30px;
-  margin:30px 0;
+  margin:40px 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -654,7 +656,7 @@ nav {
   
 
   .about-me-and-experience{
-    margin:100px 0 30px;
+    margin:150px 0 50px;
     padding-top:0;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap:10px ;

@@ -7,8 +7,12 @@ const barThree = document.querySelector('.icon-three');
 const closeIcon = document.querySelector('.times');
 const toggleBtn = document.querySelector('.theme-toggle');
 const toggleIcon = document.querySelector('.fa-solid');
+const modal = document.querySelector('.modal');
+const closebutton = document.querySelector('.close-button');
 const footertext = document.querySelector('.footer-text .date');
 footertext.innerHTML = new Date().getFullYear().toString();
+const showmodal = document.querySelector('.show-modal');
+const showmodal2 = document.querySelector('.hire-me');
 menuIcon.addEventListener('click', (e) => {
     nav.classList.add('active-nav');
     barTwo.classList.add('active');
@@ -19,21 +23,29 @@ closeIcon.addEventListener('click', () => {
     nav.classList.remove('active-nav');
     barTwo.classList.remove('active');
     barThree.classList.remove('active');
-    // setTimeout(() => {
-    //   console.log(5)
-    //   nav.classList.remove('remove-nav');
-    //   nav.classList.remove('active-nav');
-    // }, 1000)
 });
 toggleBtn.addEventListener('click', (e) => {
-    // if (e.target.classList.contains('fa-moon')) {
-    //   e.target.classList.toggle('fa-sun');
-    //   toggleBtn.classList.toggle('active-toggle')
-    //   document.documentElement.classList.toggle('dark-mode')
-    // }
     toggleIcon.classList.toggle('fa-sun');
     toggleBtn.classList.toggle('active-toggle');
     document.documentElement.classList.toggle('dark-mode');
+});
+closebutton.addEventListener('click', (e) => {
+    modal.style.display = "none";
+});
+showmodal.addEventListener('click', (e) => {
+    modal.style.display = "block";
+    nav.classList.remove('active-nav');
+    barTwo.classList.remove('active');
+    barThree.classList.remove('active');
+});
+showmodal2.addEventListener('click', (e) => {
+    modal.style.display = "block";
+    nav.classList.remove('active-nav');
+    barTwo.classList.remove('active');
+    barThree.classList.remove('active');
+});
+modal.addEventListener('click', (e) => {
+    modal.style.display = "none";
 });
 window.addEventListener('scroll', (e) => {
     const scrolled = document.documentElement.scrollTop;

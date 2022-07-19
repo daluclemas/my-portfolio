@@ -56,7 +56,7 @@
               <ul class="nav-items">
                 <li><a href="#">home</a></li>
                 <li><a href="#">projects</a></li>
-                <li><a href="#">hire me</a></li>
+                <li class="show-modal"><a>hire me</a></li>
               </ul>
 
               <div class="theme-toggle">
@@ -264,7 +264,7 @@
       </footer>
 
       <div class="hire-me">
-        <a href="#">hire me</a>
+        <a>hire me</a>
       </div>
 
       <section class="modal">
@@ -290,27 +290,35 @@
               <div class="modal-body-content">
                 <form>
                   <div class="input-container">
-                    <label for="fullname"></label>
-                    <input type="text" name="_fullname" id="fullname" placeholder="enter your fullname">
+                    <label for="fullname">full name</label>
+                    <div class="input">
+                      <input type="text" name="_fullname" id="fullname" placeholder="Enter your fullname...">
+                    </div>
                   </div>
 
                   <div class="input-container">
-                    <label for="email"></label>
-                    <input type="text" name="_email" id="email" placeholder="enter your email">
+                    <label for="email">email</label>
+                    <div class="input">
+                      <input type="text" name="_email" id="email" placeholder="Enter your email...">
+                    </div>
                   </div>
 
                   <div class="input-container">
-                    <label for="number"></label>
-                    <input type="text" name="_phonenumber" id="number" placeholder="enter mobile,eg +234...">
+                    <label for="number">phone number</label>
+                    <div class="input">
+                      <input type="text" name="_phonenumber" id="number" placeholder="enter mobile,eg +(1)...">
+                    </div>
                   </div>
 
                   <div class="text-area">
-                    <label for="message"></label>
-                    <textarea name="_message" id="message" cols="30" rows="10" placeholder="enter your message here..."></textarea>
+                    <label for="message">message</label>
+                    <div class="textarea">
+                      <textarea name="_message" id="message" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                    </div>
                   </div>
 
                   <div class="submit-btn">
-                    <button type="submit">send</button>
+                    <button type="submit">send message</button>
                   </div>
                 </form>
               </div>
