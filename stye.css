@@ -1,0 +1,94 @@
+.project-card {
+  border: 2px solid green;
+  width: 400px;
+  height: 400px;
+  margin: 10px auto;
+  overflow: hidden;
+  background: url('../assets/harmonic-image.png') no-repeat fixed;
+  background-size: contain;
+  position: relative;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  /* background: white; */
+
+}
+
+.card-diagonal-one,
+.card-diagonal-two {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.card-diagonal-one {
+  background: red;
+  transform: skewY(40deg) translateY(400px);
+}
+
+.card-diagonal-two {
+  background: green;
+  transform: skewY(40deg) translateY(-400px);
+}
+
+
+.project-card:hover .card-diagonal-one {
+  /* transform: skewY(40deg) translateY(200px) */
+  animation: cover-one 2s ease-in alternate-reverse;
+}
+
+.project-card:hover .card-diagonal-two {
+  /* transform: skewY(40deg) translateY(-200px); */
+  animation: cover-two 2s ease-in alternate-reverse;
+}
+
+@keyframes cover-one {
+  from {
+    transform: skewY(40deg) translateY(400px);
+
+  }
+
+  to {
+    transform: skewY(40deg) translateY(200px)
+  }
+}
+
+@keyframes cover-two {
+  from {
+    transform: skewY(40deg) translateY(-400px);
+  }
+
+  to {
+    transform: skewY(40deg) translateY(-200px)
+  }
+}
+
+.card-image,
+.card-texts {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.card-image {
+  background-color: blue;
+  z-index: 1;
+}
+
+.card-texts {
+  color: white;
+}
+
+.project-card:hover .card-image {
+  z-index: -1;
+  /* opacity: 0; */
+}

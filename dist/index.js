@@ -53,7 +53,7 @@ modal.addEventListener('click', (e) => {
 window.addEventListener('scroll', (e) => {
     const scrolled = document.documentElement.scrollTop;
     const hireme = document.querySelector('.hire-me');
-    if (scrolled > 260) {
+    if (scrolled > 200) {
         hireme.style.transform = 'translateX(0)';
         hireme.style.transition = '0.5s linear';
     }

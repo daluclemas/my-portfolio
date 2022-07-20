@@ -74,9 +74,7 @@ showmodal2.addEventListener('click', (e:Event | null) => {
 
 modal.addEventListener('click', (e:Event|any) => {
   if (e.target.classList.contains('hire-me-modal')){
-  
     modal.style.display = "none";
-
   }
 });
 
@@ -85,7 +83,7 @@ window.addEventListener('scroll', (e: Event | null) => {
   const scrolled = document.documentElement.scrollTop;
   const hireme = document.querySelector('.hire-me') as HTMLDivElement;
 
-  if (scrolled > 260) {
+  if (scrolled > 200) {
     hireme.style.transform = 'translateX(0)';
     hireme.style.transition = '0.5s linear'
   } else {
