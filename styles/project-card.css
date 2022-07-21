@@ -151,32 +151,40 @@ a {
 
 .project-card:hover .card-diagonal-one {
  
-  animation: cover-one 2s linear alternate-reverse;
+  animation: cover-one 1s ease-in-out normal ;
 }
 
 .project-card:hover .card-diagonal-two {
 
-  animation: cover-two 2s linear alternate-reverse;
+  animation: cover-two 1s ease-in-out normal ;
 }
 
 @keyframes cover-one {
-  from {
+  0%{
     transform: skewY(40deg) translateY(400px);
 
   }
 
-  to {
-    transform: skewY(40deg) translateY(200px)
+  50% {
+    transform: skewY(40deg) translateY(170px)
+  }
+
+  100% {
+    transform: skewY(40deg) translateY(400px)
   }
 }
 
 @keyframes cover-two {
-  from {
+  0% {
     transform: skewY(40deg) translateY(-400px);
   }
 
-  to {
-    transform: skewY(40deg) translateY(-200px)
+  50% {
+    transform: skewY(40deg) translateY(-170px)
+  }
+
+  100% {
+    transform: skewY(40deg) translateY(-400px);
   }
 }
 
@@ -193,6 +201,7 @@ a {
   z-index: 1;
   opacity: 1;
   transition: 0.5s linear;
+  transition-delay: 0.5s;
 }
 
 .card-image-one {
