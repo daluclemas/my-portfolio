@@ -14,6 +14,7 @@ footertext.innerHTML = new Date().getFullYear().toString();
 const showmodal = document.querySelector('.show-modal');
 const showmodal2 = document.querySelector('.hire-me');
 const hirememodal = document.querySelector('.modal-content');
+let currentTheme = "light";
 menuIcon.addEventListener('click', (e) => {
     nav.classList.add('active-nav');
     barTwo.classList.add('active');
@@ -29,6 +30,13 @@ toggleBtn.addEventListener('click', (e) => {
     toggleIcon.classList.toggle('fa-sun');
     toggleBtn.classList.toggle('active-toggle');
     document.documentElement.classList.toggle('dark-mode');
+    if (document.documentElement.classList.contains('dark-mode')) {
+        currentTheme = "dark";
+    }
+    else {
+        currentTheme = 'light';
+    }
+    localStorage.setItem('theme', currentTheme);
 });
 closebutton.addEventListener('click', (e) => {
     modal.style.display = "none";
@@ -59,5 +67,12 @@ window.addEventListener('scroll', (e) => {
     }
     else {
         hireme.style.transform = 'translateX(500px)';
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+        toggleIcon.classList.add('fa-sun');
+        toggleBtn.classList.add('active-toggle');
+        document.documentElement.classList.add('dark-mode');
     }
 });

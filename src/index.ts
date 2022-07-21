@@ -29,6 +29,9 @@ const showmodal2 = document.querySelector('.hire-me') as HTMLElement;
 
 const hirememodal = document.querySelector('.modal-content') as HTMLElement;
 
+let currentTheme = "light";
+
+
 
 menuIcon.addEventListener('click', (e: Event) => {
   nav.classList.add('active-nav');
@@ -46,9 +49,17 @@ closeIcon.addEventListener('click', () => {
 
 toggleBtn.addEventListener('click', (e: Event | any) => {
 
-  toggleIcon.classList.toggle('fa-sun')
-  toggleBtn.classList.toggle('active-toggle')
-  document.documentElement.classList.toggle('dark-mode')
+  toggleIcon.classList.toggle('fa-sun');
+  toggleBtn.classList.toggle('active-toggle');
+  document.documentElement.classList.toggle('dark-mode');
+
+  if (document.documentElement.classList.contains('dark-mode')) {
+    currentTheme = "dark"
+  } else {
+    currentTheme = 'light'
+  }
+
+  localStorage.setItem('theme', currentTheme);
 });
 
 
@@ -89,5 +100,14 @@ window.addEventListener('scroll', (e: Event | null) => {
   } else {
     hireme.style.transform = 'translateX(500px)';
   }
-})
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+ 
+  if (localStorage.getItem('theme') === 'dark') {
+    toggleIcon.classList.add('fa-sun');
+    toggleBtn.classList.add('active-toggle');
+    document.documentElement.classList.add('dark-mode');
+  }
+
+});
