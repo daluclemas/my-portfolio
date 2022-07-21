@@ -15,6 +15,38 @@ const showmodal = document.querySelector('.show-modal');
 const showmodal2 = document.querySelector('.hire-me');
 const hirememodal = document.querySelector('.modal-content');
 let currentTheme = "light";
+const form = document.querySelector('#form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const payload = new FormData(e.target);
+    let status = document.querySelector(".my-form-status");
+    fetch(e.target.action, {
+        method: form.method,
+        body: payload,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then((response) => {
+        if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            modal.style.display = "none";
+            form.reset();
+        }
+        else {
+            response.json().then((data) => {
+                if (Object.hasOwnProperty(data)) {
+                    status.innerHTML = data["errors"].map((error) => error["message"]).join(", ");
+                }
+                else {
+                    status.innerHTML = "Oops! There was a problem submitting your form";
+                }
+                console.log(data);
+            });
+        }
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form";
+    });
+});
 menuIcon.addEventListener('click', (e) => {
     nav.classList.add('active-nav');
     barTwo.classList.add('active');
