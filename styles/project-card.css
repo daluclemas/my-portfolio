@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,34 +45,34 @@ a {
   cursor: pointer;
 }
 
-.project-page{
+.project-page {
   width: 100%;
 }
 
-.projects-contents{
+.projects-contents {
   width: 90%;
   margin: auto;
   padding: 30px 0;
 }
 
-.go-back{
+.go-back {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.go-back .fa-solid{
+.go-back .fa-solid {
   cursor: pointer;
   color: var(--font-color);
-  font-size:18px;
+  font-size: 18px;
 }
 
-.fa-solid .fa-angle-left{
+.fa-solid .fa-angle-left {
   font-weight: 700;
 }
 
-.go-back .fa-solid:hover{
+.go-back .fa-solid:hover {
   color: var(--purple-color);
 }
 
@@ -91,7 +91,7 @@ a {
   border: 3px solid rgb(234, 221, 248);
 }
 
-.projects-container{
+.projects-container {
   width: 100%;
   /* border: 2px solid green; */
   margin: 20px 0 25px;
@@ -105,15 +105,15 @@ a {
   margin-bottom: 10px;
 }
 
-.projects{
+.projects {
   width: 100%;
   margin: 20px 0;
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 20px;
 }
 
-.project-card{
+.project-card {
   border: 1px solid rgba(75, 0, 130, 1);
   border-radius: 10px;
   overflow: hidden;
@@ -124,24 +124,28 @@ a {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.project-card-one{
-  background-image: url('../assets/harmonic-image.png') ;
+.project-card-one {
+  background-image: url("../assets/harmonic-image.png");
 }
 
-.project-card-two{
-  background-image: url('../assets/portfolio-image.png') ;
+.project-card-two {
+  background-image: url("../assets/portfolio-image.png");
 }
 
-.project-card-three{
-  background-image: url('../assets/space-tourism-image.png');
+.project-card-three {
+  background-image: url("../assets/space-tourism-image.png");
 }
 
 .project-card-four {
-  background-image: url('../assets/valores-image.png') ;
+  background-image: url("../assets/valores-image.png");
 }
 
 .project-card-five {
-  background-image: url('../assets/property-mataaz.png');
+  background-image: url("../assets/property-mataaz.png");
+}
+
+.project-card-six {
+  background-image: url("../assets/rock-paper-scissors.png");
 }
 
 .card-content {
@@ -152,7 +156,7 @@ a {
 
 .card-body {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   position: absolute;
 }
 
@@ -174,29 +178,25 @@ a {
   transform: skewY(40deg) translateY(-400px);
 }
 
-
 .project-card:hover .card-diagonal-one {
- 
-  animation: cover-one 1s ease-in-out normal ;
+  animation: cover-one 1s ease-in-out normal;
 }
 
 .project-card:hover .card-diagonal-two {
-
-  animation: cover-two 1s ease-in-out normal ;
+  animation: cover-two 1s ease-in-out normal;
 }
 
 @keyframes cover-one {
-  0%{
+  0% {
     transform: skewY(40deg) translateY(400px);
-
   }
 
   50% {
-    transform: skewY(40deg) translateY(170px)
+    transform: skewY(40deg) translateY(170px);
   }
 
   100% {
-    transform: skewY(40deg) translateY(400px)
+    transform: skewY(40deg) translateY(400px);
   }
 }
 
@@ -206,7 +206,7 @@ a {
   }
 
   50% {
-    transform: skewY(40deg) translateY(-170px)
+    transform: skewY(40deg) translateY(-170px);
   }
 
   100% {
@@ -231,27 +231,31 @@ a {
 }
 
 .card-image-one {
-  background-image: url('../assets/harmonic-image.png');
+  background-image: url("../assets/harmonic-image.png");
 }
 
 .card-image-two {
-  background-image: url('../assets/portfolio-image.png');
+  background-image: url("../assets/portfolio-image.png");
 }
 
 .card-image-three {
-  background-image: url('../assets/space-tourism-image.png');
+  background-image: url("../assets/space-tourism-image.png");
 }
 
 .card-image-four {
-  background-image: url('../assets/valores-image.png');
+  background-image: url("../assets/valores-image.png");
 }
 
 .card-image-five {
-  background-image: url('../assets/property-mataaz.png');
+  background-image: url("../assets/property-mataaz.png");
+}
+
+.card-image-six {
+  background-image: url("../assets/rock-paper-scissors.png");
 }
 
 .card-texts {
-  color:white;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,12 +266,12 @@ a {
   opacity: 0;
 }
 
-.project-summary{
+.project-summary {
   width: 90%;
   margin: auto;
 }
 
-.project-summary h4{
+.project-summary h4 {
   text-transform: capitalize;
   width: 100%;
   text-align: center;
@@ -275,18 +279,18 @@ a {
   margin-bottom: 5px;
 }
 
-.project-summary p{
+.project-summary p {
   line-height: 1.5;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
 }
 
-.project-summary p::first-letter{
+.project-summary p::first-letter {
   text-transform: uppercase;
 }
 
-.link{
+.link {
   width: 150px;
   height: 45px;
   background-color: var(--purple-color);
@@ -297,12 +301,12 @@ a {
   margin: 10px auto;
 }
 
-.link:hover{
+.link:hover {
   background-color: transparent;
   border: 2px solid white;
 }
 
-.link a{
+.link a {
   width: 100%;
   color: white;
   background-color: transparent;
@@ -311,82 +315,73 @@ a {
   text-transform: capitalize;
 }
 
-
-@media(min-width:600px) {
-  .projects{
-    grid-template-columns: repeat(2,1fr);
+@media (min-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
 }
 
-@media(min-width: 768px) {
-
-  .go-back{
+@media (min-width: 768px) {
+  .go-back {
     font-size: 26px;
   }
 
-  .projects-container{
+  .projects-container {
     margin: 30px 0 35px;
   }
 
-  .projects-container h3{
+  .projects-container h3 {
     font-size: 24px;
   }
-
-
 }
 
-@media(min-width: 992px) {
-
-  .go-back{
+@media (min-width: 992px) {
+  .go-back {
     font-size: 28px;
   }
 
-  .projects{
-    grid-template-columns: repeat(3,1fr);
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
 
-  .theme-toggle{
+  .theme-toggle {
     width: 35px;
     height: 30px;
     border: 3px solid rgba(75, 0, 130, 0.9);
-      
   }
 
   @keyframes cover-one {
-  0%{
-    transform: skewY(40deg) translateY(400px);
+    0% {
+      transform: skewY(40deg) translateY(400px);
+    }
 
+    50% {
+      transform: skewY(40deg) translateY(150px);
+    }
+
+    100% {
+      transform: skewY(40deg) translateY(400px);
+    }
   }
 
-  50% {
-    transform: skewY(40deg) translateY(150px)
-  }
+  @keyframes cover-two {
+    0% {
+      transform: skewY(40deg) translateY(-400px);
+    }
 
-  100% {
-    transform: skewY(40deg) translateY(400px)
+    50% {
+      transform: skewY(40deg) translateY(-150px);
+    }
+
+    100% {
+      transform: skewY(40deg) translateY(-400px);
+    }
   }
 }
 
-@keyframes cover-two {
-  0% {
-    transform: skewY(40deg) translateY(-400px);
-  }
-
-  50% {
-    transform: skewY(40deg) translateY(-150px)
-  }
-
-  100% {
-    transform: skewY(40deg) translateY(-400px);
-  }
-}
-
-}
-
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .projects {
     grid-template-columns: repeat(4 1fr);
   }
